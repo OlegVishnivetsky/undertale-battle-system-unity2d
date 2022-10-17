@@ -1,7 +1,8 @@
-<h3 align="center">Undertale Battle System for Unity</h3>
-
-<h3 align="left">Connect with me:</h3>
+<h2 align="center">Undertale Battle System for Unity</h2>
+<img align="right" width="100" height="100" src="https://art.pixilart.com/7c4606a37587a0f.png">
+<h3 align="left">About fight</h3>
 <p align="left">
+The combat system is a turn-based interaction with an enemy where they will send attacks at your heart for a few seconds which you must dodge (in any direction) to survive. On your turn you can strike back by choosing to “fight” or “act”, where fighting will empty their health bar and acting will allow you to “mercy” the opponent on a later turn if you choose the correct action.
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
