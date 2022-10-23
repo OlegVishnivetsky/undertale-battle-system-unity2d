@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,6 +11,8 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private List<AnimationClip> attackAnimations = new List<AnimationClip>();
     private List<string> attckAnimationNames = new List<string>();
+
+    private const string DefaultAnimationClipName = "Default State";
 
     private void OnEnable()
     {
@@ -38,11 +39,13 @@ public class Enemy : MonoBehaviour
 
     public void PlayRandomAttackAnimation()
     {
-        animator.Play(attckAnimationNames[Random.Range(0, attckAnimationNames.Count - 1)]);
+        Debug.Log("Play random attack animation method is working");
+        animator.Play(attckAnimationNames[Random.Range(0, attackAnimations.Count - 1)]);
     }
 
     public void EndTurn()
     {
         battleHandler.SwitchBattleState(BattleState.PlayerTurn);
+        animator.Play(DefaultAnimationClipName);
     }
 }

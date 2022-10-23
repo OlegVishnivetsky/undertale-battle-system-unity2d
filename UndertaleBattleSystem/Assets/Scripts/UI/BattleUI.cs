@@ -1,23 +1,29 @@
-using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class BattleUI : MonoBehaviour
 {
     [Header("Player Health UI")]
     [SerializeField] private PlayerHealth playerHealth;
+
     [SerializeField] private TMP_Text healthTMP;
     [SerializeField] private Slider playerHealthSlider;
+
     [Header("Enemy Health UI")]
     [SerializeField] private EnemyHealth enemyHealth;
+
     [SerializeField] private Slider enemyHealthSlider;
     [SerializeField] private float sliderShownTime;
+
     [Header("Components")]
     [SerializeField] private PlayerMovement player;
+
     [SerializeField] private Enemy enemy;
+
     [Header("Battle UI")]
     [SerializeField] private GameObject battleAreaPanel;
+
     [SerializeField] private GameObject menuPanel;
     [SerializeField] private TabGroup tabGroup;
     [SerializeField] private TMP_Text enemyNameTMP;

@@ -54,7 +54,7 @@ public class TabButton : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
         if (!IsInteractable) return;
 
         PositionPlayer();
-        tabGroup.OnTabSelected(this);       
+        tabGroup.OnTabSelected(this);
     }
 
     public void OnPointerExit(PointerEventData eventData)

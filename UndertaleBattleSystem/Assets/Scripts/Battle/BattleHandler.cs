@@ -23,6 +23,11 @@ public class BattleHandler : MonoBehaviour
         SwitchBattleState(BattleState.Start);
     }
 
+    private void Update()
+    {
+        Debug.Log(currentBattleState);
+    }
+
     public void SwitchToEnemyTurn()
     {
         SwitchBattleState(BattleState.EnemyTurn);
